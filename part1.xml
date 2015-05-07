@@ -82,7 +82,29 @@
                           </block>
                         </value>
                         <next>
-                          <block type="movement_stop" id="104"></block>
+                          <block type="controls_repeat" id="385" inline="true">
+                            <value name="TIMES">
+                              <block type="variables_get" id="386">
+                                <field name="VAR">distance</field>
+                              </block>
+                            </value>
+                            <statement name="DO">
+                              <block type="movement_reverse" id="396">
+                                <next>
+                                  <block type="robot_delay" id="407" inline="true">
+                                    <value name="DELAY">
+                                      <block type="math_number" id="409">
+                                        <field name="NUM">200</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </next>
+                              </block>
+                            </statement>
+                            <next>
+                              <block type="movement_stop" id="104"></block>
+                            </next>
+                          </block>
                         </next>
                       </block>
                     </next>
