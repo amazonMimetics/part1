@@ -5,7 +5,7 @@
       <block type="logic_compare" id="68" inline="true">
         <field name="OP">GT</field>
         <value name="A">
-          <block type="sensor_object" id="81">
+          <block type="sensor_object" id="167">
             <field name="OBJECT">LEFTFRONT</field>
           </block>
         </value>
@@ -17,7 +17,7 @@
       </block>
     </value>
     <statement name="DO">
-      <block type="movement_forward" id="61">
+      <block type="movement_forward" id="132">
         <next>
           <block type="robot_delay" id="106" inline="true">
             <value name="DELAY">
